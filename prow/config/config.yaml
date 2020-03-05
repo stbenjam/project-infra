@@ -74,8 +74,9 @@ periodics:
        - --updated=2160h
        - --token=/etc/token/oauth
        - |-
-         --comment=Issues go stale after 90d of inactivity.
-         Mark the issue as fresh with `/remove-lifecycle stale`.
+         --comment=Issues and pull requests go stale after 90d of
+         inactivity. You can mark this as fresh with `/remove-lifecycle stale`.
+
          Stale issues will close after an additional 30d of inactivity.
 
          If this issue is safe to close now please do so with `/close`.
@@ -107,7 +108,7 @@ periodics:
        - --updated=720h
        - --token=/etc/token/oauth
        - |-
-         --comment=Stale issues close after 30d of inactivity. Reopen the issue with `/reopen`. Mark the issue as fresh with `/remove-lifecycle stale`.
+         --comment=Stale issues and pull requests close after 30d of inactivity. Reopen the issue with `/reopen`. Mark the issue as fresh with `/remove-lifecycle stale`.
 
          /close
        - --template
